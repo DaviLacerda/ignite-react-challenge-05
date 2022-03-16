@@ -1,8 +1,16 @@
-import { AppProps } from 'next/app';
-import '../styles/globals.scss';
+import React from 'react'
+import Head from 'next/head'
+import '../styles/globals.scss'
 
-function MyApp({ Component, pageProps }: AppProps): JSX.Element {
-  return <Component {...pageProps} />;
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <Head>
+        <title>spacetraveling.</title>
+      </Head>
+      <Component {...pageProps} />
+    </>
+  )
 }
 
-export default MyApp;
+export default MyApp

@@ -1,1 +1,36 @@
-// TODO
+.container{
+    header{
+        margin-top:2rem;
+    }
+}
+
+.posts{
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+}
+
+.post{
+    h1{
+        font-weight: 700;
+        font-size: 1.75rem;
+        line-height: 2rem;
+        color: var(--heading);
+        margin-bottom: .5rem;
+    }
+
+    h2{
+        color: var(--body);
+        font-size: 1.125rem;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.highlight{
+    margin-top: 3rem;
+    color: var(--highlight);
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+}
